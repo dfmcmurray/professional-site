@@ -14,6 +14,8 @@ module.exports = function (grunt) {
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
 
+  grunt.loadNpmTasks('grunt-build-control');
+
   grunt.initConfig({
     // Configurable paths
     yeoman: {
