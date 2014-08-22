@@ -290,7 +290,7 @@ module.exports = function (grunt) {
       }
     },
     buildcontrol: {
-      dist: {
+      pages: {
         options: {
           remote: 'git@github.com:dfmcmurray/professional-site.git',
           branch: 'gh-pages',
@@ -390,7 +390,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'buildcontrol'
+    'buildcontrol:pages'
     ]);
 
   grunt.registerTask('default', [
