@@ -16,6 +16,8 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-build-control');
 
+  grunt.loadNpmTasks('grunt-newer');
+
   grunt.initConfig({
     // Configurable paths
     yeoman: {
@@ -368,7 +370,7 @@ module.exports = function (grunt) {
     'jekyll:check',
     'sass:server',
     'jshint:all',
-    'csslint:check'
+    // 'csslint:check'
   ]);
 
   grunt.registerTask('build', [
@@ -381,7 +383,7 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    'imagemin',
+    'newer:imagemin',
     'svgmin',
     'filerev',
     'usemin',
