@@ -4,8 +4,12 @@
 		vertical-align: middle;
 	}
 	.mission-statement {
-		margin-top: 10px;
 		text-align: left;
+	}
+	@media (min-width: 1200px) {
+		.mission-statement {
+			margin-top: 50px;
+		}
 	}
 	p {
 		font-size: 26px;
